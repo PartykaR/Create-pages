@@ -196,15 +196,18 @@ header h3 {
 @media (max-width:450px) {
     header nav {
         display: none;
+        position: absolute;
+        right: 0;
+        top: 10%;
     }
     header nav ul li {
         float: none;
         text-align: center;
-        border-bottom: 1px solid #31323d;
+        border-bottom: 1px solid #1d5386;
         background: #fff;
         border-radius: 3px;
-        border-left: 2px solid #31323d;
-        border-right: 2px solid #31323d;
+        border-left: 1px solid #1d5386;
+        border-right: 1px solid #1d5386;
         margin: 0;
         z-index: 1;
     }
@@ -217,7 +220,7 @@ header h3 {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
     header h1 {
         font-size: 2rem
     }
