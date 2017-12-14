@@ -5,7 +5,6 @@
 }
 
 body {
-    
     color: #1d5386;
     font-family: 'Lato', sans-serif;
 }
@@ -14,24 +13,29 @@ html {
     font-size: 10px;
 }
 
-a 
-{
+a {
     color: #2c5c88;
     text-decoration: none;
-	font-weight: 400;
+    font-weight: 400;
 }
 
-a:hover
-{
-	color: #f8aa13;
-	text-decoration: underline;
+a:hover {
+    color: #f8aa13;
+    text-decoration: underline;
 }
 
-ul
-{
-	list-style: none;
-	margin: 0;
-	padding: 0;	
+a:active {
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 2% 0;
 }
 
 #header {
@@ -44,12 +48,17 @@ ul
 }
 
 main {
+    padding: 3% 5%;
     height: 100%;
-    background-color: #E5EEF7;
-    font-size: 2rem;
+    background-color: #CFE1EF;
+    font-size: 1.5rem;
     margin-top: 100vh;
     position: relative;
     z-index: 2;
+}
+
+main h3 {
+    text-transform: uppercase;
 }
 
 #header img {
@@ -57,7 +66,6 @@ main {
     bottom: 0;
     height: 70%;
     z-index: -1;
-    
 }
 
 #header #menu-responsive {
@@ -68,50 +76,49 @@ main {
     cursor: pointer;
 }
 
-header nav
-	{
-		float: right;
-    }
-	
-		header nav ul
-		{
-			
-		}
-		
-			header nav ul li
-			{
-				float: left;
-				margin: 0 3px 0 0;
-				border-bottom: 3px solid #9D9DA0;
-			}
-			
-			header nav ul li:hover,
-			header nav ul li a:hover
-			{
-				color: #FFF;
-				border-color: #000;
-				background: #1d5386;
-                text-decoration: none;
-				transition: background .27s ease-in-out;
-				-moz-transition: background .27s ease-in-out;
-				-webkit-transition: background .27s ease-in-out;
-			}
-			
-			header nav ul li a {
-            color: #1D5386;
-            text-decoration: none;	
-            text-transform: uppercase;
-            padding: 16px 15px;
-            font-size: 2rem;
-            font-weight: 700;
-            display: block;	
+header nav {
+    float: right;
+}
+
+header nav ul {}
+
+header nav ul li {
+    float: left;
+    margin: 0 3px 0 0;
+    border-bottom: 3px solid #9D9DA0;
+}
+
+header nav ul li:hover,
+header nav ul li a:hover {
+    color: #FFF;
+    border-color: #000;
+    background: #1d5386;
+    text-decoration: none;
+    transition: background .27s ease-in-out;
+    -moz-transition: background .27s ease-in-out;
+    -webkit-transition: background .27s ease-in-out;
+}
+
+header nav ul li a {
+    color: #1D5386;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 16px 15px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    display: block;
 }
 
 #header #txt {
     position: absolute;
     top: 20%;
     left: 10%;
-    z-index: 0;
+    z-index: 3;
+    text-shadow: 
+        1px 1px 0 #b0cae3,
+        -1px 1px 0 #b0cae3,
+        -1px -1px 0 #b0cae3,
+        1px -1px 0 #b0cae3;
 }
 
 header h1 {
@@ -122,8 +129,6 @@ header h3 {
     font-size: 2.4rem;
     font-weight: 400;
 }
-
-
 
 #arrow {
     width: 64px;
@@ -165,32 +170,21 @@ header h3 {
 
 @media (orientation: landscape) {
     header img {
-    height: 60%;
-    right: 0;
-}
+        height: 60%;
+        right: 0;
+    }
 }
 
 @media (min-width: 451px) {
-    #header #menu-responsive {
-        display: none;
-    }
-    header h1 {
-        font-size: 2rem;
-    }
-    header h3 {
-        font-size: 1.5rem;
-    }
-     header img {
-        right: 50px;
+    #menu-responsive {
+        display: none; 
     }
 }
 
 @media (min-width: 530px) amd (orientation:potrait) {}
 
 @media (min-width: 768px) {
-    header h3 {
-        font-size:
-    }
+    header h3 {}
     header img {
         right: 200px;
     }
@@ -203,7 +197,7 @@ header h3 {
         font-size: 5rem;
     }
     header h3 {
-        font-size: 3,5rem;
+        font-size: 3.5rem;
     }
     header img {
         right: 300px;
@@ -214,53 +208,52 @@ header h3 {
 
 @media (max-width:450px) {
     header nav {
-        display:none;
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 10%;
     }
-} 
-
-@media (max-width: 320px) {
     header nav ul li {
-            float: none;
-            margin-top: 40px;
-            text-align: center;
-            border-bottom: 1px solid #31323d; 
-            background: #000;
-            border-radius: 17px;
-            border-left: 2px solid #31323d;
-            border-right: 2px solid #31323d;
-            margin: 0;
-            z-index: 1;
-    } 
-    
-                header nav ul li.active, 
-				header nav ul li.active a, 
-				header nav ul li:hover, 
-				header nav ul li a:hover
-				{
-					border-color: #31323d;
-					border-radius: 17px;
-				}
-    
+        float: none;
+        text-align: center;
+        border-bottom: 1px solid #1d5386;
+        background: #fff;
+        border-radius: 3px;
+        border-left: 1px solid #1d5386;
+        border-right: 1px solid #1d5386;
+        margin: 0;
+        z-index: 1;
+    }
+    header nav ul li.active,
+    header nav ul li.active a,
+    header nav ul li:hover,
+    header nav ul li a:hover {
+        border-color: #31323d;
+        border-radius: 3px;
+    }
+}
+
+@media (max-width: 360px) {
     header h1 {
         font-size: 2rem
     }
     header h3 {
         font-size: 1.5rem;
     }
-    header #txt {
-        transform: rotate(13deg); 
+    #header #txt {
+        transform: rotate(13deg);
+        text-shadow: none;
     }
-    
     main p {
-        font-size: 1,5rem;
+        font-size: 1.5rem;
     }
 }
-    
-    #arrow {
-        width: 44px;
-        height: 44px;
-        font-size: 4rem;
-    }
+
+#arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 4rem;
+}
 
 
 /* ANIMACJIE CSS*/
