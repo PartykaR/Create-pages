@@ -22,10 +22,13 @@ a {
 a:hover {
     color: #f8aa13;
     text-decoration: underline;
+<<<<<<< HEAD
 }
 
 a:active {
     color: black;
+=======
+>>>>>>> 132bbf1ed727e7e66532425c0552a3dd787ffb80
 }
 
 ul {
@@ -104,7 +107,11 @@ header nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     padding: 16px 15px;
+<<<<<<< HEAD
     font-size: 1.5rem;
+=======
+    font-size: 2rem;
+>>>>>>> 132bbf1ed727e7e66532425c0552a3dd787ffb80
     font-weight: 700;
     display: block;
 }
@@ -114,11 +121,14 @@ header nav ul li a {
     top: 20%;
     left: 10%;
     z-index: 3;
+<<<<<<< HEAD
     text-shadow: 
         1px 1px 0 #b0cae3,
         -1px 1px 0 #b0cae3,
         -1px -1px 0 #b0cae3,
         1px -1px 0 #b0cae3;
+=======
+>>>>>>> 132bbf1ed727e7e66532425c0552a3dd787ffb80
 }
 
 header h1 {
@@ -240,9 +250,14 @@ header h3 {
     header h3 {
         font-size: 1.5rem;
     }
+<<<<<<< HEAD
     #header #txt {
         transform: rotate(13deg);
         text-shadow: none;
+=======
+    header #txt {
+        transform: rotate(13deg);
+>>>>>>> 132bbf1ed727e7e66532425c0552a3dd787ffb80
     }
     main p {
         font-size: 1.5rem;
