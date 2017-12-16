@@ -24,6 +24,10 @@ a:hover {
     text-decoration: underline;
 }
 
+a:active {
+    color: black;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -53,6 +57,10 @@ main {
     z-index: 2;
 }
 
+main h3 {
+    text-transform: uppercase;
+}
+
 #header img {
     position: absolute;
     bottom: 0;
@@ -70,6 +78,7 @@ main {
 
 header nav {
     float: right;
+    z-index: 10;
 }
 
 header nav ul {}
@@ -96,7 +105,7 @@ header nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
     padding: 16px 15px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 700;
     display: block;
 }
@@ -106,6 +115,11 @@ header nav ul li a {
     top: 20%;
     left: 10%;
     z-index: 3;
+    text-shadow: 
+        1px 1px 0 #b0cae3,
+        -1px 1px 0 #b0cae3,
+        -1px -1px 0 #b0cae3,
+        1px -1px 0 #b0cae3;
 }
 
 header h1 {
@@ -118,8 +132,6 @@ header h3 {
 }
 
 #arrow {
-    width: 64px;
-    height: 64px;
     border: 3px solid #1d5386;
     position: absolute;
     bottom: 5%;
@@ -145,6 +157,28 @@ header h3 {
     animation: arrow 1.4s infinite linear;
 }
 
+#scrollup {
+    width: 44px;
+    height: 44px;
+    border:  3px solid #1d5386;
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+    position: fixed;
+    border-radius: 50%;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#scrollup:hover {
+    color: #545351;
+    border-color: #545351;
+    cursor: pointer;
+}
+
+.fa-arrow-up {
+    
+}
 
 /* rotate = stopnie */
 
@@ -227,8 +261,9 @@ header h3 {
     header h3 {
         font-size: 1.5rem;
     }
-    header #txt {
+    #header #txt {
         transform: rotate(13deg);
+        text-shadow: none;
     }
     main p {
         font-size: 1.5rem;
