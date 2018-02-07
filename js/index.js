@@ -19,6 +19,9 @@ jQuery(document).ready(function()
             $('#link3').click(function() {
                 $.scrollTo($('#omnie'), 500);
             });
+            $('#link4').click(function() {
+                $.scrollTo($('#omnie'), 500);
+            });
             $('#link5').click(function() {
                 $.scrollTo($('#bitcoin'), 500);
             });
@@ -27,3 +30,9 @@ jQuery(document).ready(function()
                 $.scrollTo($('body'), 1000);
             });
         });
+
+//pokaż podczas przewijania
+$(window).scroll(function () {
+    if ($(this).scrollTop()>800) $('.scrollup').fadeIn();
+    else $('.scrollup').fadeOut();
+});
