@@ -20,7 +20,7 @@ jQuery(document).ready(function()
                 $.scrollTo($('#omnie'), 500);
             });
             $('#link4').click(function() {
-                $.scrollTo($('#omnie'), 500);
+                $.scrollTo($('#kontakt'), 500);
             });
             $('#link5').click(function() {
                 $.scrollTo($('#bitcoin'), 500);
