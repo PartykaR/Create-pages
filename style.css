@@ -36,6 +36,7 @@ ul {
 
 p {
     margin: 2% 0;
+    clear: both;
 }
 
 #header {
@@ -59,6 +60,10 @@ main {
 
 main h3 {
     text-transform: uppercase;
+}
+
+main img .autor {
+    border-radius: 7px;
 }
 
 #header img {
