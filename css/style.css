@@ -69,8 +69,11 @@ main h3 {
     float: left;
 }
 
-.design p, img {
+.design p  {
     line-height: 2.8rem;
+}
+
+.design img {
     float: right;
 }
 
@@ -84,8 +87,11 @@ main h3 {
     margin: 20px;
 }
 
-.bitcoin p, img {
+.bitcoin p   {
     line-height: 2.8;
+}
+
+.bitcoin img {
     float: right;
 }
 
