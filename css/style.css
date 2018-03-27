@@ -61,6 +61,34 @@ main h3 {
     text-transform: uppercase;
 }
 
+.description p {
+    line-height: 2.8rem;
+}
+
+.description img {
+    float: left;
+}
+
+.design p, img {
+    line-height: 2.8rem;
+    float: right;
+}
+
+.omnie p {
+    line-height: 2.8rem;
+}
+
+.omnie img {
+    float: left;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.bitcoin p, img {
+    line-height: 2.8;
+    float: right;
+}
+
 #header img {
     position: absolute;
     bottom: 0;
@@ -116,7 +144,10 @@ header nav ul li a {
     left: 10%;
     z-index: 3;
     text-shadow: 
-        1.5px -1.5px 1.5px #949b98;
+        1px 1px 0 #b0cae3,
+        -1px 1px 0 #b0cae3,
+        -1px -1px 0 #b0cae3,
+        1px -1px 0 #b0cae3;
 }
 
 header h1 {
@@ -158,13 +189,13 @@ header h3 {
     width: 44px;
     height: 44px;
     border:  3px solid #1d5386;
+    position: absolute;
     bottom: 5%;
     right: 2%;
     position: fixed;
     border-radius: 50%;
     font-size: 3rem;
     text-align: center;
-    display: none;
 }
 
 .scrollup:hover {
@@ -207,6 +238,8 @@ header h3 {
         right: 200px;
     }
 }
+
+@media (min-width: 768px) amd (orientation:potrait) {}
 
 @media (min-width: 1280px) {
     header h1 {
