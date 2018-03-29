@@ -87,14 +87,6 @@ main h3 {
     margin: 20px;
 }
 
-.bitcoin p   {
-    line-height: 2.8;
-}
-
-.bitcoin img {
-    float: right;
-}
-
 #header img {
     position: absolute;
     bottom: 0;
