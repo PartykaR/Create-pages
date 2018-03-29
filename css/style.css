@@ -187,13 +187,13 @@ header h3 {
     width: 44px;
     height: 44px;
     border:  3px solid #1d5386;
-    position: absolute;
+    position: fixed;
     bottom: 5%;
     right: 2%;
-    position: fixed;
     border-radius: 50%;
     font-size: 3rem;
     text-align: center;
+    display: none;
 }
 
 .scrollup:hover {
