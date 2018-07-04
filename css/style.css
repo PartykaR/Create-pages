@@ -236,7 +236,7 @@ header h3 {
     }
 }
 
-@media (min-width: 530px) amd (orientation:potrait) {}
+@media (min-width: 530px) and (orientation:potrait) {}
 
 @media (min-width: 768px) {
     header h3 {}
@@ -245,7 +245,7 @@ header h3 {
     }
 }
 
-@media (min-width: 768px) amd (orientation:potrait) {}
+@media (min-width: 768px) and (orientation:potrait) {}
 
 @media (min-width: 1280px) {
     header h1 {
