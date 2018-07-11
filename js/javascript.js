@@ -29,3 +29,6 @@ $(".scrollup").on("click", function () {
         scrollTop: $("main").offset().top
     }, 1000)
 });
+
+
+    
