@@ -111,21 +111,21 @@ main h3 {
     cursor: pointer;
 }
 
-header nav {
+main #menu nav {
     float: right;
     z-index: 10;
 }
 
 
 
-header nav ul li {
+main #menu nav ul li {
     float: left;
     margin: 0 3px 0 0;
     border-bottom: 3px solid #9D9DA0;
 }
 
-header nav ul li:hover,
-header nav ul li a:hover {
+main #menu nav ul li:hover,
+main #menu nav ul li a:hover {
     color: #FFF;
     border-color: #000;
     background: #1d5386;
@@ -135,7 +135,7 @@ header nav ul li a:hover {
     -webkit-transition: background .27s ease-in-out;
 }
 
-header nav ul li a {
+main #menu nav ul li a {
     color: #1D5386;
     text-decoration: none;
     text-transform: uppercase;
@@ -143,6 +143,14 @@ header nav ul li a {
     font-size: 1.5rem;
     font-weight: 700;
     display: block;
+}
+
+.sticky {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 101;
 }
 
 #header #txt {
