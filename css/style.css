@@ -111,21 +111,25 @@ main h3 {
     cursor: pointer;
 }
 
-main #menu nav {
-    float: right;
-    z-index: 10;
+.menu {
+    background-color: #fff;
+}
+
+.menu nav {
+    display: inline-block;
+    z-index: 101;
 }
 
 
 
-main #menu nav ul li {
+.menu nav ul li {
     float: left;
     margin: 0 3px 0 0;
     border-bottom: 3px solid #9D9DA0;
 }
 
-main #menu nav ul li:hover,
-main #menu nav ul li a:hover {
+.menu nav ul li:hover,
+.menu nav ul li a:hover {
     color: #FFF;
     border-color: #000;
     background: #1d5386;
@@ -135,7 +139,7 @@ main #menu nav ul li a:hover {
     -webkit-transition: background .27s ease-in-out;
 }
 
-main #menu nav ul li a {
+.menu nav ul li a {
     color: #1D5386;
     text-decoration: none;
     text-transform: uppercase;
