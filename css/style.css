@@ -97,6 +97,32 @@ main h3 {
     float: right;
 }
 
+.bitcoin {
+    background-image: url(../img/bitcoin.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    color: #FFF;
+}
+
+.bitcoin h3 {
+    padding: 3%;
+}
+
+.bitcoin p {
+    padding: 1%;
+    line-height: 2.8rem;
+}
+
+.bitcoin .bg {
+    background-color: #1d5386;
+    opacity: .5;
+}
+
+.bitcoin img {
+    float: right;
+}
+
 .omnie p {
     line-height: 2.8rem;
 }
