@@ -58,6 +58,7 @@ main {
 }
 
 main h3 {
+    margin-top: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
@@ -70,8 +71,26 @@ main h3 {
     float: left;
 }
 
+.design h3 {
+    padding: 3%;
+}
+
 .design p {
+    padding: 1%;
     line-height: 2.8rem;
+}
+
+.design {
+    background-image: url(../img/adult.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-attachment: fixed;
+    color: #FFF;
+}
+
+.design .bg {
+    background-color: #1d5386;
+    opacity: .5;
 }
 
 .design img {
@@ -117,7 +136,7 @@ main #menu-responsive {
 
 .menu nav ul li {
     float: left;
-    margin: 0 3px 0 0;
+    margin: 0 3px 0 30px;
     border-bottom: 3px solid #1d5386;
 }
 
