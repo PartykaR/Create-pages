@@ -50,7 +50,7 @@ p {
 main {
     padding: 3% 5%;
     height: 100%;
-    background-color: #CFE1EF;
+    background-color: rgb(249, 251, 253);
     font-size: 1.5rem;
     margin-top: 100vh;
     position: relative;
@@ -339,6 +339,12 @@ header h3 {
     .menu nav ul li a:hover {
         border-color: #31323d;
         border-radius: 3px;
+    }
+
+    .fa-bars {
+        right: 3vw;
+        top: 3vw;
+        position: fixed;
     }
 }
 
