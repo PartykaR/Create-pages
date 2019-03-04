@@ -63,6 +63,22 @@ main h3 {
     letter-spacing: 3px;
 }
 
+.wrapper {
+    margin: 10px 0;
+}
+
+.burger {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 50px;
+    z-index: 110;
+}
+
+i.off {
+    display: none;
+}
+
 .description p {
     line-height: 2.8rem;
 }
@@ -149,42 +165,19 @@ main #menu-responsive {
     cursor: pointer;
 }
 
-.menu {
-    background-color: #CFE1EF;
+main .menu nav {
+    position: fixed;
+    left: 0;
+    width: 30vw;
+    top: 0px;
+    bottom: 0;
+    height: 100vh;
+    background-color: white;
+    transition: .3s;
 }
 
-.menu nav {
-    display: inline-block;
-    z-index: 101;
-}
-
-
-
-.menu nav ul li {
-    float: left;
-    margin: 0 3px 0 30px;
-    border-bottom: 3px solid #1d5386;
-}
-
-.menu nav ul li:hover,
-.menu nav ul li a:hover {
-    color: #FFF;
-    border-color: #000;
-    background: #1d5386;
-    text-decoration: none;
-    transition: background .27s ease-in-out;
-    -moz-transition: background .27s ease-in-out;
-    -webkit-transition: background .27s ease-in-out;
-}
-
-.menu nav ul li a {
-    color: #1D5386;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 16px 15px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    display: block;
+main .menu nav.off {
+    left: -30vw;
 }
 
 .sticky {
