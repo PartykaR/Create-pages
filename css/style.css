@@ -70,7 +70,7 @@ main h3 {
 .burger {
     position: fixed;
     top: 30px;
-    right: 30px;
+    left: 30px;
     font-size: 50px;
     z-index: 110;
 }
