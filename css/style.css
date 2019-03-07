@@ -50,7 +50,7 @@ p {
 main {
     padding: 3% 5%;
     height: 100%;
-    background-color: #CFE1EF;
+    background-color: rgb(249, 251, 253);
     font-size: 1.5rem;
     margin-top: 100vh;
     position: relative;
@@ -61,6 +61,22 @@ main h3 {
     margin-top: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+
+.wrapper {
+    margin: 10px 0;
+}
+
+.burger {
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    font-size: 50px;
+    z-index: 110;
+}
+
+i.off {
+    display: none;
 }
 
 .description p {
@@ -149,42 +165,30 @@ main #menu-responsive {
     cursor: pointer;
 }
 
-.menu {
-    background-color: #CFE1EF;
+main .menu nav {
+    position: fixed;
+    left: 0;
+    width: 30vw;
+    top: 0px;
+    bottom: 0;
+    height: 100vh;
+    background-color: rgb(223, 219, 219);
+    transition: .3s;
 }
 
-.menu nav {
-    display: inline-block;
-    z-index: 101;
+main .menu nav.off {
+    left: -27vw;
 }
 
-
-
-.menu nav ul li {
-    float: left;
-    margin: 0 3px 0 30px;
-    border-bottom: 3px solid #1d5386;
+.fa-bars {
+    left: 3vw;
+    top: 3vw;
+    position: fixed;
 }
 
-.menu nav ul li:hover,
-.menu nav ul li a:hover {
-    color: #FFF;
-    border-color: #000;
-    background: #1d5386;
-    text-decoration: none;
-    transition: background .27s ease-in-out;
-    -moz-transition: background .27s ease-in-out;
-    -webkit-transition: background .27s ease-in-out;
-}
-
-.menu nav ul li a {
-    color: #1D5386;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 16px 15px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    display: block;
+.fa-angle-left {
+    left: 27vw;
+    position: fixed;
 }
 
 .sticky {
@@ -311,6 +315,7 @@ header h3 {
     }
 }
 
+
 @media (min-width: 1600px) {}
 
 @media (max-width:450px) {
@@ -340,6 +345,7 @@ header h3 {
         border-color: #31323d;
         border-radius: 3px;
     }
+
 }
 
 @media (max-width: 360px) {

@@ -6,6 +6,7 @@
     <title>Odnawianie stron www</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <!-- @todo dodany link do google fonts-->
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&amp;subset=latin-ext" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -15,10 +16,8 @@
 </head>
 
 <body>
+    <div class="wrapper">
     <header id="header">
-        
-
-
 
         <div id="txt">
             <h1>Strony internetowe</h1>
@@ -33,13 +32,19 @@
 
 
     <main>
+        
+            <div class="burger">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-angle-left off"></i>
+            </div>
+
             <div id="menu-responsive">
                     <i class="fa fa-bars" aria-hidden="true"></i>
                 </div>
 
                 <!--MENU POZIOME-->
                 <div class="menu">
-                        <nav>
+                        <nav class="off">
                             <ul>
                                 <li>
                                     <a id="link1" href="#">Oferta</a>
@@ -59,6 +64,7 @@
                             </ul>
                         </nav>
                     </div>
+                    <br />
 
        <section id="content">
         <h3 id="oferta">Oferta</h3>
@@ -123,7 +129,10 @@
 
     </main>
 
+</div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/javascript.js"></script>
     <script src="js/jquery.scrollTo.min.js"></script>
     <script src="js/index.js"></script>
