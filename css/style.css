@@ -172,12 +172,23 @@ main .menu nav {
     top: 0px;
     bottom: 0;
     height: 100vh;
-    background-color: white;
+    background-color: rgb(223, 219, 219);
     transition: .3s;
 }
 
 main .menu nav.off {
-    left: -30vw;
+    left: -27vw;
+}
+
+.fa-bars {
+    left: 3vw;
+    top: 3vw;
+    position: fixed;
+}
+
+.fa-angle-left {
+    left: 27vw;
+    position: fixed;
 }
 
 .sticky {
@@ -304,6 +315,7 @@ header h3 {
     }
 }
 
+
 @media (min-width: 1600px) {}
 
 @media (max-width:450px) {
@@ -334,11 +346,6 @@ header h3 {
         border-radius: 3px;
     }
 
-    .fa-bars {
-        right: 3vw;
-        top: 3vw;
-        position: fixed;
-    }
 }
 
 @media (max-width: 360px) {
