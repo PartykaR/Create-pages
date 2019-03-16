@@ -160,13 +160,7 @@ i.off {
     z-index: -1;
 }
 
-main #menu-responsive {
-    position: absolute;
-    left: 1%;
-    top: 1%;
-    font-size: 3rem;
-    cursor: pointer;
-}
+
 
 main .menu nav {
     position: fixed;
@@ -204,7 +198,7 @@ main .menu nav ul li a:hover {
 }
 
 main .menu nav.off {
-    left: -27vw;
+    left: -30vw;
 }
 
 .fa-bars {
@@ -318,15 +312,11 @@ header h3 {
     }
 }
 
-@media (min-width: 530px) and (orientation:potrait) {}
-
 @media (min-width: 768px) {
     header img {
         right: 200px;
     }
 }
-
-@media (min-width: 768px) and (orientation:potrait) {}
 
 @media (min-width: 1280px) {
     header h1 {
@@ -346,32 +336,6 @@ header h3 {
 @media (min-width: 1600px) {}
 
 @media (max-width:450px) {
-    .menu nav {
-        display: none;
-        position: absolute;
-        right: 0;
-        top: 10%;
-    }
-
-    .menu nav ul li {
-        float: none;
-        text-align: center;
-        border-bottom: 1px solid #1d5386;
-        background: #fff;
-        border-radius: 3px;
-        border-left: 1px solid #1d5386;
-        border-right: 1px solid #1d5386;
-        margin: 0;
-        z-index: 1;
-    }
-
-    .menu nav ul li.active,
-    .menu nav ul li.active a,
-    .menu nav ul li:hover,
-    .menu nav ul li a:hover {
-        border-color: #31323d;
-        border-radius: 3px;
-    }
 
 }
 
@@ -391,6 +355,18 @@ header h3 {
 
     main p {
         font-size: 1.5rem;
+    }
+
+    main .menu nav ul li a {
+        width: 50vw;
+    }
+
+    main .menu nav.off {
+        left: -50vw;
+    }
+
+    .fa-angle-left {
+        left: 50vw;
     }
 }
 
