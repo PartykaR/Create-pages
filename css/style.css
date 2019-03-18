@@ -205,12 +205,16 @@ main .menu nav.off {
     left: 3vw;
     top: 3vw;
     position: fixed;
+    cursor: pointer;
 }
 
 .fa-angle-left {
     left: 27vw;
     position: fixed;
+    cursor: pointer;
 }
+
+
 
 .sticky {
     width: 100%;
