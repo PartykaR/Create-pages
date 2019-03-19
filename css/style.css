@@ -104,11 +104,11 @@ i.off {
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
-    color: #FFF;
+    color: black;
 }
 
 .design .bg {
-    background-color: #1d5386;
+    background-color: rgb(249, 251, 253);
     opacity: .5;
 }
 
@@ -121,7 +121,7 @@ i.off {
     background-size: cover;
     background-position: top center;
     background-attachment: fixed;
-    color: #FFF;
+    color: #083055;
 }
 
 .bitcoin h3 {
@@ -134,7 +134,7 @@ i.off {
 }
 
 .bitcoin .bg {
-    background-color: #1d5386;
+    background-color: rgb(249, 251, 253);
     opacity: .5;
 }
 
