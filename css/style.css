@@ -7,6 +7,7 @@
 body {
     color: #1d5386;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
 html {
@@ -105,6 +106,7 @@ i.off {
     background-position: top center;
     background-attachment: fixed;
     color: black;
+    transition: .8s;
 }
 
 .design .bg {
@@ -114,6 +116,21 @@ i.off {
 
 .design img {
     float: right;
+}
+
+.design, .bitcoin {
+    transform: translateX(-100vw);
+}
+
+.omnie {
+    transform: translateX(100vw);
+    transition: .8s;
+}
+
+.design.active,
+.bitcoin.active,
+.omnie.active {
+    transform: translateX(0);
 }
 
 .bitcoin {
