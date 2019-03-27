@@ -118,7 +118,8 @@ i.off {
     float: right;
 }
 
-.design, .bitcoin {
+.design, 
+.bitcoin {
     transform: translateX(-100vw);
 }
 
@@ -139,6 +140,7 @@ i.off {
     background-position: top center;
     background-attachment: fixed;
     color: #083055;
+    transition: .8s;
 }
 
 .bitcoin h3 {
