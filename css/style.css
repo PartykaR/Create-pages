@@ -171,6 +171,24 @@ i.off {
     margin: 20px;
 }
 
+/*QUOTES*/
+.quotes article {
+    margin-bottom: 60px;
+}
+
+.quotes img {
+    display: block;
+    width: 100%;
+}
+
+.quotes article {
+    transform: scale(0);
+    transition: .8s linear;
+}
+
+.quotes article.active {
+    transform: scale(1);
+}
 
 #header img {
     position: absolute;
