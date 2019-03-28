@@ -30,8 +30,30 @@ $(document).on('scroll', function () {
       $bitcoin.addClass('active');
    }
 
+   //quotes
+   const $op1 = $('.op1');
+   const $op2 = $('.op2');
+
+   const op1FromTop = $op1.offset().top;
+   const op2FromTop = $op2.offset().top;
+
+   const op1Height = $op1.height();
+   const op2Height = $op2.height();
+
+   if (scrollValue > op1FromTop + op1Height / 2 - windowHeight) {
+      $op1.addClass('active');
+   }
+   if (scrollValue > op2FromTop + op2Height /2 - windowHeight) {
+      $op2.addClass('active');
+   }
+
+
    //czyściciel
    if (scrollValue < 100) {
       $('section').removeClass('active');
+   }
+
+   if (scrolleValue < 100) {
+      $('quotes').removeClass('active');
    }
 })
