@@ -40,10 +40,10 @@ $(document).on('scroll', function () {
    const op1Height = $op1.height();
    const op2Height = $op2.height();
 
-   if (scrollValue > op1FromTop + op1Height / 2 - windowHeight) {
+   if (scrollValue > op1FromTop + op1Height / 8 - windowHeight) {
       $op1.addClass('active');
    }
-   if (scrollValue > op2FromTop + op2Height /2 - windowHeight) {
+   if (scrollValue > op2FromTop + op2Height / 8 - windowHeight) {
       $op2.addClass('active');
    }
 
@@ -53,7 +53,7 @@ $(document).on('scroll', function () {
       $('section').removeClass('active');
    }
 
-   if (scrolleValue < 100) {
-      $('quotes').removeClass('active');
+   if (scrollValue < 100) {
+      $('article').removeClass('active');
    }
 })
