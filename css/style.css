@@ -382,11 +382,13 @@ header h3 {
 
 @media (max-width: 360px) {
     header h1 {
-        font-size: 2rem
+        font-size: 2.5rem;
+        color: black;
     }
 
     header h3 {
-        font-size: 1.5rem;
+        font-size: 2.2rem;
+        color: black;
     }
 
     #header #txt {
@@ -395,7 +397,7 @@ header h3 {
     }
 
     main p {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     main .menu nav ul li a {
