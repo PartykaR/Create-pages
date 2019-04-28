@@ -423,6 +423,10 @@ header h3 {
     transform: translateX(0);
 }
 
+.mob {
+    font-size: 1rem;
+}
+
 
 /* ANIMACJIE CSS*/
 
