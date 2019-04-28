@@ -411,6 +411,10 @@ header h3 {
     .fa-angle-left {
         left: 50vw;
     }
+    
+.mob {
+    font-size: 1rem;
+}
 }
 
 #arrow {
@@ -421,10 +425,6 @@ header h3 {
 
 .omnie {
     transform: translateX(0);
-}
-
-.mob {
-    font-size: 1rem;
 }
 
 
