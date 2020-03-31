@@ -16,7 +16,7 @@ $("#arrow").on("click", function () {
 $(document).on('click', 'a', function (event) {
     event.preventDefault();
     $('body, html').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
+        scrollTop: $($.attr(this, 'href')).offset(0).top
     }, 1000);
 });
 

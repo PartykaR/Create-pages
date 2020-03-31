@@ -6,7 +6,7 @@
 
 body {
     color: #1d5386;
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
     overflow-x: hidden;
 }
 
@@ -49,6 +49,12 @@ p {
     background-size: cover;
     background-position: top center;
     overflow-x: hidden;
+}
+
+.logo {
+    position: fixed;
+    top: 10px;
+    right: 10px;
 }
 
 main {
@@ -106,26 +112,26 @@ i.off {
     background-position: top center;
     background-attachment: fixed;
     color: black;
-    transition: .8s;
+    transition: 0.8s;
 }
 
 .design .bg {
     background-color: rgb(249, 251, 253);
-    opacity: .9;
+    opacity: 0.9;
 }
 
 .design img {
     float: right;
 }
 
-.design, 
+.design,
 .bitcoin {
     transform: translateX(-100vw);
 }
 
 .omnie {
     transform: translateX(100vw);
-    transition: .8s;
+    transition: 0.8s;
 }
 
 .design.active,
@@ -140,7 +146,7 @@ i.off {
     background-position: top center;
     background-attachment: fixed;
     color: #083055;
-    transition: .8s;
+    transition: 0.8s;
 }
 
 .bitcoin h3 {
@@ -154,7 +160,7 @@ i.off {
 
 .bitcoin .bg {
     background-color: rgb(249, 251, 253);
-    opacity: .8;
+    opacity: 0.8;
 }
 
 .bitcoin img {
@@ -183,7 +189,7 @@ i.off {
 
 .quotes article {
     transform: scale(0);
-    transition: .8s linear;
+    transition: 0.8s linear;
 }
 
 .quotes article.active {
@@ -197,8 +203,6 @@ i.off {
     z-index: -1;
 }
 
-
-
 main .menu nav {
     position: fixed;
     left: 0;
@@ -211,7 +215,7 @@ main .menu nav {
     text-align: center;
     /* background: #fff; */
     margin: 0;
-    transition: .3s;
+    transition: 0.3s;
 }
 
 main .menu nav ul li a {
@@ -251,8 +255,6 @@ main .menu nav.off {
     cursor: pointer;
 }
 
-
-
 .sticky {
     width: 100%;
     position: fixed;
@@ -266,11 +268,7 @@ main .menu nav.off {
     top: 20%;
     left: 10%;
     z-index: 3;
-    text-shadow:
-        1px 1px 0 #b0cae3,
-        -1px 1px 0 #b0cae3,
-        -1px -1px 0 #b0cae3,
-        1px -1px 0 #b0cae3;
+    text-shadow: 1px 1px 0 #b0cae3, -1px 1px 0 #b0cae3, -1px -1px 0 #b0cae3, 1px -1px 0 #b0cae3;
 }
 
 header h1 {
@@ -329,13 +327,11 @@ header h3 {
     cursor: pointer;
 }
 
-
-
 /* rotate = stopnie */
 
 @media (orientation: portrait) {
     h3 span::after {
-        content: '\A';
+        content: "\A";
         white-space: pre;
     }
 }
@@ -373,11 +369,10 @@ header h3 {
     }
 }
 
+@media (min-width: 1600px) {
+}
 
-@media (min-width: 1600px) {}
-
-@media (max-width:450px) {
-
+@media (max-width: 450px) {
 }
 
 @media (max-width: 360px) {
@@ -411,10 +406,10 @@ header h3 {
     .fa-angle-left {
         left: 50vw;
     }
-    
-.mob {
-    font-size: 1rem;
-}
+
+    .mob {
+        font-size: 1rem;
+    }
 }
 
 #arrow {
@@ -427,19 +422,18 @@ header h3 {
     transform: translateX(0);
 }
 
-
 /* ANIMACJIE CSS*/
 
 @keyframes arrow {
     0% {
-        transform: translateY(-80%)
+        transform: translateY(-80%);
     }
 
     50% {
-        transform: translateY(0px)
+        transform: translateY(0px);
     }
 
     100% {
-        transform: translateY(80px)
+        transform: translateY(80px);
     }
 }
