@@ -353,6 +353,9 @@ header h3 {
     header img {
         right: 200px;
     }
+    .burger {
+        display: none;
+    }
 }
 
 @media (min-width: 1280px) {
