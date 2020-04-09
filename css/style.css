@@ -255,58 +255,6 @@ main .menu nav.off {
     cursor: pointer;
 }
 
-main #menu-responsive {
-    position: absolute;
-    left: 1%;
-    top: 1%;
-    font-size: 3rem;
-    cursor: pointer;
-}
-
-.menu {
-    background-color: #cfe1ef;
-}
-
-.menu nav {
-    display: inline-block;
-    z-index: 101;
-}
-
-.menu nav ul li {
-    float: left;
-    margin: 0 3px 0 30px;
-    border-bottom: 3px solid #1d5386;
-}
-
-.menu nav ul li:hover,
-.menu nav ul li a:hover {
-    color: #fff;
-    border-color: #000;
-    background: #1d5386;
-    text-decoration: none;
-    transition: background 0.27s ease-in-out;
-    -moz-transition: background 0.27s ease-in-out;
-    -webkit-transition: background 0.27s ease-in-out;
-}
-
-.menu nav ul li a {
-    color: #1d5386;
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 16px 15px;
-    font-size: 1.5rem;
-    font-weight: 700;
-    display: block;
-}
-
-.sticky {
-    width: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 101;
-}
-
 #header #txt {
     position: absolute;
     top: 20%;
