@@ -356,6 +356,57 @@ header h3 {
     .burger {
         display: none;
     }
+    .menu__horizontal {
+        position: absolute;
+        left: 1%;
+        top: 1%;
+        font-size: 3rem;
+        cursor: pointer;
+    }
+
+    .menu__horizontal {
+        background-color: #cfe1ef;
+    }
+
+    .menu__horizontal nav {
+        display: inline-block;
+        z-index: 101;
+    }
+
+    .menu__horizontal nav ul li {
+        float: left;
+        margin: 0 3px 0 30px;
+        border-bottom: 3px solid #1d5386;
+    }
+
+    .menu__horizontal nav ul li:hover,
+    .menu__horizontal nav ul li a:hover {
+        color: #fff;
+        border-color: #000;
+        background: #1d5386;
+        text-decoration: none;
+        transition: background 0.27s ease-in-out;
+        -moz-transition: background 0.27s ease-in-out;
+        -webkit-transition: background 0.27s ease-in-out;
+    }
+
+    .menu__horizontal nav ul li a {
+        color: #1d5386;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 16px 15px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        display: block;
+    }
+
+    .sticky {
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 101;
+    }
 }
 
 @media (min-width: 1280px) {
