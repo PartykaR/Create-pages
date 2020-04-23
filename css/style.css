@@ -217,6 +217,7 @@ main .menu nav {
     /* background: #fff; */
     margin: 0;
     transition: 0.3s;
+    z-index: 110;
 }
 
 main .menu nav ul li a {
