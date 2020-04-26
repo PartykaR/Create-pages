@@ -1,0 +1,487 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+   color: #1d5386;
+   font-family: "Lato", sans-serif;
+   overflow-x: hidden;
+}
+
+html {
+   font-size: 10px;
+}
+
+a {
+   color: #2c5c88;
+   text-decoration: none;
+   font-weight: 400;
+}
+
+a:hover {
+   color: #f8aa13;
+   text-decoration: underline;
+}
+
+a:active {
+   color: black;
+}
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+p {
+   margin: 2% 0;
+}
+
+#header {
+   height: 100vh;
+   width: 100%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background-image: url(../img/header.jpg);
+   background-size: cover;
+   background-position: top center;
+   overflow-x: hidden;
+}
+
+.logo {
+   position: fixed;
+   top: 10px;
+   right: 10px;
+   z-index: 110;
+}
+
+main {
+   padding: 3% 5%;
+   height: 100%;
+   background-color: rgb(249, 251, 253);
+   font-size: 1.5rem;
+   margin-top: 100vh;
+   position: relative;
+   z-index: 2;
+}
+
+main h3 {
+   margin-top: 20px;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+}
+
+.wrapper {
+   margin: 10px 0;
+}
+
+.burger {
+   position: fixed;
+   top: 30px;
+   left: 30px;
+   font-size: 50px;
+   z-index: 110;
+}
+
+i.off {
+   display: none;
+}
+
+.description p {
+   line-height: 2.8rem;
+}
+
+.description img {
+   float: left;
+}
+
+.design h3 {
+   padding: 3%;
+}
+
+.design p {
+   padding: 1%;
+   line-height: 2.8rem;
+}
+
+.design {
+   background-image: url(../img/adult.jpg);
+   background-size: cover;
+   background-position: top center;
+   background-attachment: fixed;
+   color: black;
+   transition: 0.8s;
+}
+
+.design .bg {
+   background-color: rgb(249, 251, 253);
+   opacity: 0.9;
+}
+
+.design img {
+   float: right;
+}
+
+.design,
+.bitcoin {
+   transform: translateX(-100vw);
+}
+
+.omnie {
+   transform: translateX(100vw);
+   transition: 0.8s;
+}
+
+.design.active,
+.bitcoin.active,
+.omnie.active {
+   transform: translateX(0);
+}
+
+.bitcoin {
+   background-image: url(../img/bitcoin.jpg);
+   background-size: cover;
+   background-position: top center;
+   background-attachment: fixed;
+   color: #083055;
+   transition: 0.8s;
+}
+
+.bitcoin h3 {
+   padding: 3%;
+}
+
+.bitcoin p {
+   padding: 1%;
+   line-height: 2.8rem;
+}
+
+.bitcoin .bg {
+   background-color: rgb(249, 251, 253);
+   opacity: 0.8;
+}
+
+.bitcoin img {
+   float: right;
+}
+
+.omnie p {
+   line-height: 2.8rem;
+}
+
+.omnie img {
+   float: left;
+   border-radius: 50%;
+   margin: 20px;
+}
+
+/*QUOTES*/
+.quotes article {
+   margin-bottom: 60px;
+}
+
+.quotes img {
+   display: block;
+   width: 100%;
+}
+
+.quotes article {
+   transform: scale(0);
+   transition: 0.8s linear;
+}
+
+.quotes article.active {
+   transform: scale(1);
+}
+
+#header img {
+   position: absolute;
+   bottom: 0;
+   height: 70%;
+   z-index: -1;
+}
+
+main .menu nav {
+   position: fixed;
+   left: 0;
+   width: 30vw;
+   top: 0px;
+   bottom: 0;
+   height: 100vh;
+   font-size: 3rem;
+   float: none;
+   text-align: center;
+   /* background: #fff; */
+   margin: 0;
+   transition: 0.3s;
+   z-index: 110;
+}
+
+main .menu nav ul li a {
+   width: 27vw;
+   float: left;
+   border-left: 1px solid #1d5386;
+   border-right: 1px solid #1d5386;
+   border-bottom: 1px solid #1d5386;
+   border-radius: 3px;
+   background-color: #fff;
+}
+
+main .menu nav ul li.active,
+main .menu nav ul li.active a,
+main .menu nav ul li:hover,
+main .menu nav ul li a:hover {
+   background-color: #1d5386;
+   color: #b0cae3;
+   border-color: #31323d;
+   border-radius: 3px;
+}
+
+main .menu nav.off {
+   left: -30vw;
+}
+
+.fa-bars {
+   left: 3vw;
+   top: 3vw;
+   position: fixed;
+   cursor: pointer;
+}
+
+.fa-angle-left {
+   left: 27vw;
+   position: fixed;
+   cursor: pointer;
+}
+
+#header #txt {
+   position: absolute;
+   top: 20%;
+   left: 10%;
+   z-index: 3;
+   text-shadow: 1px 1px 0 #b0cae3, -1px 1px 0 #b0cae3, -1px -1px 0 #b0cae3, 1px -1px 0 #b0cae3;
+}
+
+header h1 {
+   font-size: 2.6rem;
+}
+
+header h3 {
+   font-size: 2.4rem;
+   font-weight: 400;
+   letter-spacing: 3px;
+}
+
+#arrow {
+   border: 3px solid #1d5386;
+   position: absolute;
+   bottom: 5%;
+   left: 50%;
+   transform: translateX(-50%);
+   border-radius: 50%;
+   font-size: 5rem;
+   text-align: center;
+   text-shadow: 0px -10px 0 #1d5386, 0px -20px 0 #1d5386;
+   overflow: hidden;
+   transition: 1s ease;
+}
+
+#arrow:hover {
+   text-shadow: 0px -10px 0 black, 0px -20px 0 black;
+   color: black;
+   border-color: black;
+   background-color: #b1cce6;
+   cursor: pointer;
+}
+
+.fa-angle-down {
+   animation: arrow 1.4s infinite linear;
+}
+
+.scrollup {
+   width: 44px;
+   height: 44px;
+   border: 3px solid #1d5386;
+   position: absolute;
+   bottom: 5%;
+   right: 1%;
+   position: fixed;
+   border-radius: 50%;
+   font-size: 3rem;
+   text-align: center;
+   display: none;
+}
+
+.scrollup:hover {
+   color: #545351;
+   border-color: #545351;
+   cursor: pointer;
+}
+
+/* rotate = stopnie */
+
+@media (orientation: portrait) {
+   h3 span::after {
+      content: "\A";
+      white-space: pre;
+   }
+}
+
+@media (orientation: landscape) {
+   header img {
+      height: 60%;
+      right: 0;
+   }
+}
+
+@media (min-width: 451px) {
+   .menu__responsive {
+      display: none;
+   }
+}
+
+@media (min-width: 768px) {
+   header img {
+      right: 200px;
+   }
+   .burger {
+      display: none;
+   }
+   .menu__horizontal {
+      position: absolute;
+      left: 1%;
+      top: 1%;
+      font-size: 3rem;
+      cursor: pointer;
+   }
+
+   .menu__horizontal {
+      background-color: #cfe1ef;
+   }
+
+   .menu__horizontal nav {
+      display: inline-block;
+      z-index: 101;
+   }
+
+   .menu__horizontal nav ul li {
+      float: left;
+      margin: 0 3px 0 30px;
+      border-bottom: 3px solid #1d5386;
+   }
+
+   .menu__horizontal nav ul li:hover,
+   .menu__horizontal nav ul li a:hover {
+      color: #fff;
+      border-color: #000;
+      background: #1d5386;
+      text-decoration: none;
+      transition: background 0.27s ease-in-out;
+      -moz-transition: background 0.27s ease-in-out;
+      -webkit-transition: background 0.27s ease-in-out;
+   }
+
+   .menu__horizontal nav ul li a {
+      color: #1d5386;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 16px 15px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      display: block;
+   }
+
+   .sticky {
+      width: 100%;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 101;
+   }
+}
+
+@media (min-width: 1280px) {
+   header h1 {
+      font-size: 5rem;
+   }
+
+   header h3 {
+      font-size: 3.5rem;
+   }
+
+   header img {
+      right: 300px;
+   }
+}
+
+@media (min-width: 1600px) {
+}
+
+@media (max-width: 450px) {
+}
+
+@media (max-width: 360px) {
+   header h1 {
+      font-size: 2.5rem;
+      color: black;
+   }
+
+   header h3 {
+      font-size: 2.2rem;
+      color: black;
+   }
+
+   #header #txt {
+      transform: rotate(13deg);
+      text-shadow: none;
+   }
+
+   main p {
+      font-size: 2rem;
+   }
+
+   main .menu nav ul li a {
+      width: 50vw;
+   }
+
+   main .menu nav.off {
+      left: -50vw;
+   }
+
+   .fa-angle-left {
+      left: 50vw;
+   }
+
+   .mob {
+      font-size: 1rem;
+   }
+}
+
+#arrow {
+   width: 44px;
+   height: 44px;
+   font-size: 4rem;
+}
+
+.omnie {
+   transform: translateX(0);
+}
+
+/* ANIMACJIE CSS*/
+
+@keyframes arrow {
+   0% {
+      transform: translateY(-80%);
+   }
+
+   50% {
+      transform: translateY(0px);
+   }
+
+   100% {
+      transform: translateY(80px);
+   }
+}
