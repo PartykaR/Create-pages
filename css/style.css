@@ -350,6 +350,31 @@ header h3 {
     .burger {
         display: none;
     }
+
+    main .menu nav.off {
+        left: 0;
+        display: inline-block;
+    }
+
+    main .menu nav {
+        display: inline-block;
+        background-color: rgba(190, 224, 238, 0.506);
+        width: 100vw;
+        height: 10vh;
+    }
+
+    main .menu nav ul,
+    ul li {
+        display: block;
+    }
+
+    main .menu nav ul li {
+        display: inline;
+    }
+
+    main .menu nav ul li a {
+        width: 100px;
+    }
     .menu__horizontal {
         position: absolute;
         left: 1%;
@@ -359,7 +384,7 @@ header h3 {
     }
 
     .menu__horizontal {
-        background-color: #cfe1ef;
+        background-color: #6ba3ce;
     }
 
     .menu__horizontal nav {
