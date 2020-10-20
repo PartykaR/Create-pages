@@ -394,7 +394,7 @@ header h3 {
 
     .menu__horizontal nav ul li {
         float: left;
-        margin: 0 3px 0 30px;
+        margin: 0 3px 0 10px;
         border-bottom: 3px solid #1d5386;
     }
 
