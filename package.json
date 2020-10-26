@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/PartykaR/Create-pages/issues"
   },
-  "homepage": "https://github.com/PartykaR/Create-pages#readme"
+  "homepage": "https://github.com/PartykaR/Create-pages#readme",
+  "dependencies": {
+    "terser": "^5.3.8"
+  }
 }
