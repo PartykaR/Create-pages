@@ -25,6 +25,9 @@ jQuery(document).ready(function()
             $('#link5').click(function() {
                 $.scrollTo($('#bitcoin'), 500);
             });
+             $('#link6').click(function() {
+                $.scrollTo($('#content'), 500);
+            });
 
             $('.scrollup').click(function() {
                 $.scrollTo($('body'), 1000);

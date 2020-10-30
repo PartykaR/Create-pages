@@ -62,7 +62,9 @@
             <br />
 
             <section id="content">
+                <a id="link6" href="#">
                 <img class="logo" src="img/logo.png" alt="logo">
+                </a>
                 <h3 id="oferta">Oferta</h3>
                 <section class="description">
                     <h3>Odnawianie starych stron</h3>
@@ -195,6 +197,10 @@
 
             </section>
 
+            <div id="root">
+                <!-- kontener na aplikacje react -->
+            </div>
+
         </main>
 
     </div>
@@ -212,9 +218,11 @@
     <!-- Uwaga: podczas wdrażania aplikacji do środowiska produkcyjnego, zamień "development.js" na "production.min.js". -->
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
     <!-- Załaduj nasz komponent reactowy. -->
-    <script src="like_button.js"></script>
+    <script type="text/babel" src="like_button.js"></script>
+    <script type="text/babel" src="js/App.js"></script>
 </body>
 <!--@todo kod śledzenia-->
 
