@@ -62,7 +62,9 @@
             <br />
 
             <section id="content">
+                <a id="link6" href="#">
                 <img class="logo" src="img/logo.png" alt="logo">
+                </a>
                 <h3 id="oferta">Oferta</h3>
                 <section class="description">
                     <h3>Odnawianie starych stron</h3>
@@ -185,6 +187,7 @@
                     <p>W tej części strony będzie formulaż kontaktowy </p>
                     <p>W tej części strony będzie formulaż kontaktowy!! </p>
                     <p><a href="tel:790282074"class="contect-form__info-link">Tel: 790 282 074</a> </p>
+                    <div id="like_button_container"></div>
                 </section>
 
 
@@ -193,6 +196,10 @@
                 </div>
 
             </section>
+
+            <div id="root">
+                <!-- kontener na aplikacje react -->
+            </div>
 
         </main>
 
@@ -207,9 +214,15 @@
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/sticky.js"></script>
 
+    <!-- Załaduj Reacta. -->
+    <!-- Uwaga: podczas wdrażania aplikacji do środowiska produkcyjnego, zamień "development.js" na "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-
-
+    <!-- Załaduj nasz komponent reactowy. -->
+    <script type="text/babel" src="like_button.js"></script>
+    <script type="text/babel" src="js/App.js"></script>
 </body>
 <!--@todo kod śledzenia-->
 
