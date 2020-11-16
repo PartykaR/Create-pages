@@ -17,11 +17,7 @@ $(document).on('scroll', function () {
    const bitcoinFromTop = $bitcoin.offset().top;
    const bitcoinHeight = $bitcoin.outerHeight();
 
-<<<<<<< HEAD
-   if(scrollValue > designFromTop + designHeight /2 - windowHeight) {
-=======
    if(scrollValue > designFromTop + designHeight / 8 - windowHeight) {
->>>>>>> kontactForm
       // console.log("jestem wyświetlony");
       $design.addClass('active');
    }
