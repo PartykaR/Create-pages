@@ -179,13 +179,18 @@
 
                 <section class="contact">
                     <h3 id="kontakt">Kontakt</h3>
-                    <p>W tej części strony będzie formulaż kontaktowy </p>
-                    <p>W tej części strony będzie formulaż kontaktowy </p>
-                    <p>W tej części strony będzie formulaż kontaktowy </p>
-                    <p>W tej części strony będzie formulaż kontaktowy </p>
-                    <p>W tej części strony będzie formulaż kontaktowy </p>
-                    <p>W tej części strony będzie formulaż kontaktowy </p>
-                    <p>W tej części strony będzie formulaż kontaktowy!! </p>
+                    <div id="send_form_status"></div>
+                    <form method="post" action="/send_form.php" id="contact_form">
+                        <div><label for="name">Imię i nazwisko</label></div>
+                        <div><input type="text" name="name" id="name" class="formField" /></div>
+                        <div><label for="phone">Numer telefonu</label></div>
+                        <div><input type="text" name="phone" id="phone" class="formField" /></div>
+                        <div><label for="email">Adres email</label></div>
+                        <div><input type="text" name="email" id="email" class="formField" /></div>
+                        <div><label for="message">Treść wiadomości</label></div>
+                        <div><textarea name="message" id="message" class="formField"></textarea></div>
+                        <div><button id="sendBtn">Wyślij</button></div>
+                    </form>
                     <p><a href="tel:790282074"class="contect-form__info-link">Tel: 790 282 074</a> </p>
                     <div id="like_button_container"></div>
                 </section>
@@ -206,6 +211,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/contact.js"></script>
     <script src="js/effect.js"></script>
     <script src="js/script.js"></script>
     <script src="js/javascript.js"></script>
