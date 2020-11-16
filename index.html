@@ -62,7 +62,13 @@
             <br />
 
             <section id="content">
+<<<<<<< HEAD
                 <a id="link6" href="#"><img class="logo" src="img/logo.png" alt="logo"></a>
+=======
+                <a id="link6" href="#">
+                <img class="logo" src="img/logo.png" alt="logo">
+                </a>
+>>>>>>> kontactForm
                 <h3 id="oferta">Oferta</h3>
                 <section class="description">
                     <h3>Odnawianie starych stron</h3>
@@ -179,6 +185,7 @@
 
                 <section class="contact">
                     <h3 id="kontakt">Kontakt</h3>
+<<<<<<< HEAD
                     <p>W tej części strony będzie formulaż kontaktowy </p>
                     <p>W tej części strony będzie formulaż kontaktowy </p>
                     <p>W tej części strony będzie formulaż kontaktowy </p>
@@ -187,6 +194,22 @@
                     <p>W tej części strony będzie formulaż kontaktowy </p>
                     <p>W tej części strony będzie formulaż kontaktowy!! </p>
                     <p><a href="tel:790282074" class="contect-form__info-link">Tel: 790 282 074</a> </p>
+=======
+                    <div id="send_form_status"></div>
+                    <form method="post" action="/send_form.php" id="contact_form">
+                        <div><label for="name">Imię i nazwisko</label></div>
+                        <div><input type="text" name="name" id="name" class="formField" /></div>
+                        <div><label for="phone">Numer telefonu</label></div>
+                        <div><input type="text" name="phone" id="phone" class="formField" /></div>
+                        <div><label for="email">Adres email</label></div>
+                        <div><input type="text" name="email" id="email" class="formField" /></div>
+                        <div><label for="message">Treść wiadomości</label></div>
+                        <div><textarea name="message" id="message" class="formField"></textarea></div>
+                        <div><button id="sendBtn">Wyślij</button></div>
+                    </form>
+                    <p><a href="tel:790282074"class="contect-form__info-link">Tel: 790 282 074</a> </p>
+                    <div id="like_button_container"></div>
+>>>>>>> kontactForm
                 </section>
 
 
@@ -196,11 +219,16 @@
 
             </section>
 
+            <div id="root">
+                <!-- kontener na aplikacje react -->
+            </div>
+
         </main>
 
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/contact.js"></script>
     <script src="js/effect.js"></script>
     <script src="js/script.js"></script>
     <script src="js/javascript.js"></script>
@@ -209,9 +237,15 @@
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="js/sticky.js"></script>
 
+    <!-- Załaduj Reacta. -->
+    <!-- Uwaga: podczas wdrażania aplikacji do środowiska produkcyjnego, zamień "development.js" na "production.min.js". -->
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
-
-
+    <!-- Załaduj nasz komponent reactowy. -->
+    <script type="text/babel" src="like_button.js"></script>
+    <script type="text/babel" src="js/App.js"></script>
 </body>
 <!--@todo kod śledzenia-->
 

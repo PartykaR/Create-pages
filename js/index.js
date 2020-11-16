@@ -25,7 +25,11 @@ jQuery(document).ready(function()
             $('#link5').click(function() {
                 $.scrollTo($('#bitcoin'), 500);
             });
+<<<<<<< HEAD
             $('#link6').click(function() {
+=======
+             $('#link6').click(function() {
+>>>>>>> kontactForm
                 $.scrollTo($('#content'), 500);
             });
 
