@@ -321,6 +321,17 @@ header h3 {
     cursor: pointer;
 }
 
+.footer {
+    background-color: #1d5386;
+    font-size: 1.5rem;
+    height: 5vh;
+    color: rgb(249, 251, 253);
+}
+
+.footer p {
+    text-align: center;
+}
+
 /* rotate = stopnie */
 
 @media (orientation: portrait) {
