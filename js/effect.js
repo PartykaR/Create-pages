@@ -17,7 +17,7 @@ $(document).on('scroll', function () {
    const bitcoinFromTop = $bitcoin.offset().top;
    const bitcoinHeight = $bitcoin.outerHeight();
 
-   if(scrollValue > designFromTop + designHeight / 8 - windowHeight) {
+   if (scrollValue > designFromTop + designHeight / 8 - windowHeight) {
       // console.log("jestem wyświetlony");
       $design.addClass('active');
    }
