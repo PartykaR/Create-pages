@@ -14,6 +14,135 @@ html {
     font-size: 10px;
 }
 
+.team {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #ccc;
+    position: relative;
+}
+
+.team img.color {
+    position: absolute;
+    bottom: 0;
+    right: -8%;
+    height: 36%;
+    z-index: 1;
+    animation: color 4s linear infinite;
+}
+
+.team img.gray {
+    position: absolute;
+    bottom: 0;
+    left: -70%;
+    height: 110%;
+    opacity: 0.2;
+    animation: gray 4s linear infinite;
+}
+
+.team .member {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    /* text-transform: uppercase; */
+    letter-spacing: 2px;
+    animation: text 4s linear infinite;
+}
+
+.team h1 {
+    font-size: 4rem;
+}
+
+.team h2 {
+    font-size: 2.2rem;
+}
+
+@keyframes color {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 0;
+    }
+
+    13% {
+        opacity: 1;
+    }
+
+    87% {
+        opacity: 1;
+    }
+
+    92% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(-5%);
+        opacity: 0;
+    }
+}
+
+@keyframes gray {
+    0% {
+        transform: translate(0) scale(1);
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 0;
+    }
+
+    13% {
+        opacity: 0.2;
+    }
+
+    87% {
+        opacity: 0.2;
+    }
+
+    92% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(5%) scale(1.1);
+        opacity: 0;
+    }
+}
+
+@keyframes text {
+    0% {
+        transform: scale(1);
+        opacity: 0;
+    }
+
+    8% {
+        opacity: 0;
+    }
+
+    13% {
+        opacity: 1;
+    }
+
+    87% {
+        opacity: 1;
+    }
+
+    92% {
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
 a {
     color: #2c5c88;
     text-decoration: none;
@@ -39,18 +168,6 @@ p {
     margin: 2% 0;
 }
 
-#header {
-    height: 100vh;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-image: url(../img/header.jpg);
-    background-size: cover;
-    background-position: top center;
-    overflow-x: hidden;
-}
-
 .logo {
     position: fixed;
     top: 10px;
@@ -63,7 +180,7 @@ main {
     height: 100%;
     background-color: rgb(249, 251, 253);
     font-size: 1.5rem;
-    margin-top: 100vh;
+    margin-top: 0;
     position: relative;
     z-index: 2;
 }
@@ -196,14 +313,6 @@ i.off {
 .quotes article.active {
     transform: scale(1);
 }
-
-#header img {
-    position: absolute;
-    bottom: 0;
-    height: 70%;
-    z-index: -1;
-}
-
 main .menu nav {
     position: fixed;
     left: 0;
@@ -255,14 +364,6 @@ main .menu nav.off {
     left: 27vw;
     position: fixed;
     cursor: pointer;
-}
-
-#header #txt {
-    position: absolute;
-    top: 20%;
-    left: 10%;
-    z-index: 3;
-    text-shadow: 1px 1px 0 #b0cae3, -1px 1px 0 #b0cae3, -1px -1px 0 #b0cae3, 1px -1px 0 #b0cae3;
 }
 
 header h1 {
@@ -342,9 +443,26 @@ header h3 {
 }
 
 @media (orientation: landscape) {
-    header img {
-        height: 60%;
-        right: 0;
+    .team img.color {
+        right: 2%;
+        height: 56%;
+    }
+
+    .team img.gray {
+        bottom: -10%;
+        left: -15%;
+        height: 130%;
+    }
+
+    .team .member {
+        width: 60%;
+        left: 0;
+        right: auto;
+    }
+
+    main .menu nav ul li a {
+        background-color: #ccc;
+        opacity: 0.8;
     }
 }
 
@@ -369,7 +487,7 @@ header h3 {
 
     main .menu nav {
         display: inline-block;
-        background-color: rgba(190, 224, 238, 0.506);
+        background-color: rgba(190, 223, 238, 0.013);
         width: 100vw;
         height: 10vh;
     }
@@ -439,9 +557,19 @@ header h3 {
     }
 }
 
+@media (min-width: 1025px) {
+    .team h1 {
+        font-size: 6rem;
+    }
+
+    .team h2 {
+        font-size: 4rem;
+    }
+}
+
 @media (min-width: 1280px) {
     header h1 {
-        font-size: 5rem;
+        font-size: 6rem;
     }
 
     header h3 {
@@ -468,11 +596,6 @@ header h3 {
     header h3 {
         font-size: 2.2rem;
         color: black;
-    }
-
-    #header #txt {
-        transform: rotate(13deg);
-        text-shadow: none;
     }
 
     main p {
