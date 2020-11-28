@@ -6,8 +6,8 @@ const grayImgHtml = document.querySelector('.gray');
 const h1Html = document.querySelector('.member h1');
 const h2Html = document.querySelector('.member h2');
 
-const colorImages = ['img/banSlider/s1.png', 'img/banSlider/s2.png', 'img/banSlider/s3.png'];
-const grayImages = ['img/banSlider/s1a.png', 'img/banSlider/s2a.png', 'img/banSlider/s3a.png'];
+const colorImages = ['img/banSlider/s1.png', 'img/banSlider/r2.png', 'img/banSlider/s3.png'];
+const grayImages = ['img/banSlider/s1a.png', 'img/banSlider/r2a.png', 'img/banSlider/s3a.png'];
 const names = ['Anna Bugart', 'Robert Partyka', 'Arek Pawłowicz'];
 const profesions = ['Programistka JS', 'Front-End Developer', 'UX i UI Designer'];
 
