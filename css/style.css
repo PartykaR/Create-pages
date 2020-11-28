@@ -376,28 +376,6 @@ header h3 {
     letter-spacing: 3px;
 }
 
-#arrow {
-    border: 3px solid #1d5386;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    border-radius: 50%;
-    font-size: 5rem;
-    text-align: center;
-    text-shadow: 0px -10px 0 #1d5386, 0px -20px 0 #1d5386;
-    overflow: hidden;
-    transition: 1s ease;
-}
-
-#arrow:hover {
-    text-shadow: 0px -10px 0 black, 0px -20px 0 black;
-    color: black;
-    border-color: black;
-    background-color: #b1cce6;
-    cursor: pointer;
-}
-
 .fa-angle-down {
     animation: arrow 1.4s infinite linear;
 }
@@ -440,6 +418,11 @@ header h3 {
         content: "\A";
         white-space: pre;
     }
+
+    main .menu nav ul li a {
+        background-color: #ccc;
+        opacity: 0.8;
+    }
 }
 
 @media (orientation: landscape) {
@@ -458,11 +441,6 @@ header h3 {
         width: 60%;
         left: 0;
         right: auto;
-    }
-
-    main .menu nav ul li a {
-        background-color: #ccc;
-        opacity: 0.8;
     }
 }
 
@@ -503,6 +481,8 @@ header h3 {
 
     main .menu nav ul li a {
         width: 100px;
+        background-color: #fff;
+        opacity: 0.8;
     }
     .menu__horizontal {
         position: absolute;
@@ -617,12 +597,6 @@ header h3 {
     .mob {
         font-size: 1rem;
     }
-}
-
-#arrow {
-    width: 44px;
-    height: 44px;
-    font-size: 4rem;
 }
 
 .omnie {
